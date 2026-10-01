@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#410003", "surface-variant": "#d8e3fb", "surface-container-low": "#f0f3ff", "secondary-container": "#645efb", "secondary": "#4b41e1", "inverse-on-surface": "#ecf1ff", "on-secondary-fixed": "#0f0069", "surface-bright": "#f9f9ff", "on-tertiary-fixed": "#002113", "on-secondary-fixed-variant": "#3323cc", "on-error-container": "#93000a", "primary-container": "#d8232a", "error-container": "#ffdad6", "inverse-primary": "#ffb3ad", "on-tertiary-fixed-variant": "#005236", "on-background": "#111c2d", "on-secondary-container": "#fffbff", "surface-container-high": "#dee8ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#ccffe2", "on-surface-variant": "#5c403d", "tertiary": "#006443", "surface-container-highest": "#d8e3fb", "on-primary-container": "#fff1ef", "inverse-surface": "#263143", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "secondary-fixed-dim": "#c3c0ff", "on-surface": "#111c2d", "surface-container": "#e7eeff", "primary-fixed-dim": "#ffb3ad", "outline": "#916f6c", "surface-tint": "#bf071b", "on-error": "#ffffff", "surface": "#f9f9ff", "tertiary-fixed-dim": "#4edea3", "tertiary-container": "#007f57", "secondary-fixed": "#e2dfff", "background": "#f9f9ff", "surface-dim": "#cfdaf2", "primary-fixed": "#ffdad6", "on-secondary": "#ffffff", "error": "#ba1a1a", "outline-variant": "#e5bdb9", "on-primary-fixed-variant": "#930011", "tertiary-fixed": "#6ffbbe", "primary": "#b20017" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter-lg": "2rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin-lg": "3rem", "gutter-md": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-md": "2rem", "gutter": "1rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-hero": ["48px", { "lineHeight": "56px", "fontWeight": "800" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-hero-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6"><a class="flex items-center gap-2" data-path="ai-bus-discovery" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[22px]">directions_bus</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">redBus</span></a><div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-[0_0_16px_-2px_rgba(99,102,241,0.18)]"><span class="material-symbols-outlined text-secondary text-[16px]">auto_awesome</span><span class="font-label-sm text-label-sm uppercase tracking-wide">AI Copilot Active</span></div></div><nav class="hidden md:flex items-center gap-1" data-active-classes="bg-surface-container text-on-surface font-bold rounded-lg"><a aria-current="page" class="px-3 py-2 transition-all bg-surface-container text-on-surface font-bold rounded-lg" data-path="ai-bus-discovery" href="#">Bus Discovery</a><a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-bookings" href="#">My Bookings</a><a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="help-center" href="#">Help Center</a></nav><div class="flex items-center gap-3"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">headset_mic</span><span class="hidden lg:inline">Support</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- Sub-header Breadcrumb & Travel Context Bar -->
+<section class="w-full bg-surface-container-low px-6 lg:px-12 py-4">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<a class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</a>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Delhi</span>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_forward</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Manali Express Route</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm ml-2">Fri, 24 Oct • 3 Operators Selected</span>
+</div>
+</div>
+<!-- Quick AI Metric Pill -->
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3.5 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md text-tertiary">Real-time Telemetry Synced (12s ago)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2 bg-surface-container px-2 py-0.5 rounded">3/3 Buses Tracked</span>
+</div>
+</div>
+</section>
+<!-- AI Verdict Hero & Quick-Ask Command Row -->
+<section class="w-full px-6 lg:px-12 pt-8 pb-4">
+<div class="max-w-7xl mx-auto space-y-6">
+<!-- AI Verdict Banner Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-6 md:p-8 shadow-sm">
+<!-- Ambient Decorative AI Glow -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/50 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-64 h-64 rounded-full bg-primary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<!-- Left Badge & Big AI Verdict -->
+<div class="lg:col-span-8 space-y-3">
+<div class="flex items-center gap-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-[0_0_12px_rgba(99,102,241,0.25)]">
+<span class="material-symbols-outlined text-[16px] text-secondary">auto_awesome</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">redBus AI Verdict Matrix</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Model: TransitEngine 4.2 • High Confidence</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface leading-snug">
+<span class="text-primary font-bold">Zingbus Plus</span> is ₹50 cheaper with early 04:30 AM arrival, while <span class="text-secondary font-bold">IntrCity</span> offers exclusive private lounge access at Dhaula Kuan.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Traveling for business? Choose IntrCity for undisturbed sleep (vibration rating: 4.8/5) and guaranteed 15-minute cabin Wi-Fi reliability. For budget &amp; mountain sunrise, Zingbus leads.
+            </p>
+</div>
+<!-- Right AI Metric Summary Bento -->
+<div class="lg:col-span-4 grid grid-cols-2 gap-3 bg-surface-container-low/70 p-4 rounded-xl backdrop-blur-sm">
+<div class="p-3 bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center justify-between text-tertiary mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Top Punctual</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">98.2%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">Zingbus Plus Electric</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center justify-between text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">airline_seat_recline_extra</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Smoothest Ride</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">0.12 G</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">IntrCity SmartBus</div>
+</div>
+<div class="col-span-2 flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Combined audits from 4,120 riders</span>
+<button class="text-secondary hover:text-on-secondary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+                Audit breakdown <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Ask Chips Row -->
+<div class="relative z-10 pt-5 mt-5 bg-surface-container-low/40 rounded-lg p-3 flex flex-wrap items-center gap-2.5">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5 pl-1 mr-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">chat_spark</span>
+            Instant AI Comparisons:
+          </span>
+<button class="quick-chip group px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface hover:text-on-secondary-fixed font-label-md text-label-md transition-all shadow-sm flex items-center gap-1.5" onclick="triggerFilter('morning')" type="button">
+<span>Which is best for morning meetings?</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-on-secondary-fixed">arrow_outward</span>
+</button>
+<button class="quick-chip group px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface hover:text-on-secondary-fixed font-label-md text-label-md transition-all shadow-sm flex items-center gap-1.5" onclick="triggerFilter('cleanliness')" type="button">
+<span>Cleanliness difference?</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-on-secondary-fixed">arrow_outward</span>
+</button>
+<button class="quick-chip group px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface hover:text-on-secondary-fixed font-label-md text-label-md transition-all shadow-sm flex items-center gap-1.5" onclick="triggerFilter('cancellation')" type="button">
+<span>Cancellation flexibility?</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-on-secondary-fixed">arrow_outward</span>
+</button>
+<button class="quick-chip group px-3.5 py-1.5 rounded-full bg-surface-container-lowest hover:bg-secondary-fixed text-on-surface hover:text-on-secondary-fixed font-label-md text-label-md transition-all shadow-sm flex items-center gap-1.5" onclick="triggerFilter('luggage')" type="button">
+<span>Luggage hold space &amp; safety?</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-on-secondary-fixed">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Side-by-Side Head Cards Section (Sticky Alignment Base) -->
+<section class="w-full px-6 lg:px-12 pt-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-12 gap-6 items-stretch">
+<!-- Left Legend Spanner (3 Cols) -->
+<div class="col-span-12 lg:col-span-3 flex flex-col justify-end p-6 bg-surface-container-low rounded-xl">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm w-fit mb-3">
+<span class="material-symbols-outlined text-[16px]">compare_arrows</span>
+            Side-by-Side Matrix
+          </div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Active Contenders</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-4">
+            Compare specs vetted via real transit telematics and actual passenger audits over the past 30 days.
+          </p>
+<div class="flex items-center gap-3 pt-3 bg-surface-container-lowest p-3 rounded-lg">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface uppercase font-bold">Fare Lock Active</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Seats held at guaranteed rates for 14:20m</div>
+</div>
+</div>
+</div>
+<!-- Bus Card 1: Zingbus Plus Electric -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 flex flex-col bg-surface-container-lowest rounded-xl shadow-md overflow-hidden relative group">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern sleek Zingbus Plus Electric sleeper intercity bus photographed in daytime under clear blue skies, vibrant turquoise and orange accents on white coach body, aerodynamic Bharat Benz build, photorealistic commercial vehicle photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrros4dxLkb8pmSmkcG2d4SovqeF3z4RppR73Qrbne84357Ox-a1pCxiNZcxg3R4S7utwyVPlsuPMCsLbGef1SvizR4WQPBuCJq_En1kkgjNEXuNoIN3WBqI2GV5QhbZ8nQjSDQRkU-PYo7vtmUthwA1lCyleiIWrFhzvPaYbHiLLEUG-O6peFbovX2lJBuH2pBZenOjH-CcxVnLgL6Z60HDZqDSDaL0SxcjGIACv7RxqJ4EuwtHs"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> 100% Electric
+            </div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+              ₹50 Cheaper
+            </div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Top Rated Operator</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold">
+                  ★ 4.8
+                </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-1">Zingbus Plus Electric</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Volvo 9600 Multi-Axle EV • Semi-Sleeper &amp; Sleeper</p>
+</div>
+<div class="pt-4 mt-4 bg-surface-container-low p-3 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Starting from</span>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">₹1,199</div>
+</div>
+<button class="px-4 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all active:scale-95 shadow-sm" type="button">
+                Select Seats
+              </button>
+</div>
+</div>
+</div>
+<!-- Bus Card 2: IntrCity SmartBus (Flagship Highlight) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 flex flex-col bg-surface-container-lowest rounded-xl shadow-lg overflow-hidden relative group">
+<!-- Recommended Badge -->
+<div class="absolute top-0 right-0 z-20 bg-secondary text-on-secondary px-3 py-1 rounded-bl-lg font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">recommend</span> AI Pick: Most Relaxing
+          </div>
+<div class="relative h-44 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Premium IntrCity SmartBus executive sleeper coach vehicle parked at dedicated upscale private boarding terminal with warm golden dusk illumination, deep navy blue coach with gold trim, ultra-clean commercial fleet photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXAFordgz3afYKa27bsFjdIkyihNXBmABzEct05aneyEQHg9CoUe1XY25bwYMxpd72otfULtHaUHXv2fLVMn3_fyNh7j0zls-Bp8Em-KgWrNl67GZPJpTk85n48dKTyqwI-uCpQTq56UGxF_8OCD2ZbYmdYVMhMjp18Zo5HsOr_1Ngl2rocn-lEu8xnddnL_elcCeVKOmJe_bNlc4uVv9NOSqAi-1qK10Z8-jNvMZ4WkiwuEoqX9g"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">meeting_room</span> Private Lounge
+            </div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">SmartBus Certified</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold">
+                  ★ 4.9
+                </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-1">IntrCity SmartBus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scania Club Class 2+1 AC Sleeper (Smart Cabins)</p>
+</div>
+<div class="pt-4 mt-4 bg-secondary-fixed/30 p-3 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Starting from</span>
+<div class="font-headline-md text-headline-md text-secondary font-bold">₹1,249</div>
+</div>
+<button class="px-4 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all active:scale-95 shadow-sm" type="button">
+                Select Seats
+              </button>
+</div>
+</div>
+</div>
+<!-- Bus Card 3: NueGo -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 flex flex-col bg-surface-container-lowest rounded-xl shadow-md overflow-hidden relative group">
+<div class="relative h-44 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Contemporary NueGo electric passenger coach on scenic highway near hills, clean mint green and electric blue aesthetic decals on coach exterior, bright sunny daytime outdoor travel photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQOzsJ2xzfb2vTi_qEGW-EmREc8A3DPudUOKuoVapPrdv6UbU6rYYgq9o-jAlHPSSU49DCP8Rsv1jBqkwlsnjRuofEZOynlzI4d7l8NBgtwWzafliDuoNLlnNt-krApy_xPQ4jcNjqQlaTUDwpalu5aV9VSMjImI3M6cXLWE1HplSHP1fXI_itjCdwXY2vCS3WrJussVKwFZqId8nULy51z8NTDCYvLj-yW8Tc6ucZr8nqQmeYgHM"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">eco</span> Green Mobility
+            </div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              Fast Charging Halts
+            </div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold tracking-wider">Zero Tailpipe</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold">
+                  ★ 4.7
+                </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-1">NueGo Intercity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">GreenCell Multi-Axle EV Sleeper 2+1</p>
+</div>
+<div class="pt-4 mt-4 bg-surface-container-low p-3 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Starting from</span>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">₹1,215</div>
+</div>
+<button class="px-4 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all active:scale-95 shadow-sm" type="button">
+                Select Seats
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comparison Matrix Table / Bento Grid Container -->
+<section class="w-full px-6 lg:px-12 py-8">
+<div class="max-w-7xl mx-auto space-y-4">
+<!-- Section Divider Header -->
+<div class="flex items-center justify-between bg-surface-container-high/60 px-6 py-3 rounded-lg">
+<span class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">analytics</span>
+          Detailed Parameter Breakdown
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">Highlighting AI-detected notable differences</span>
+</div>
+<!-- ROW 1: Departure & Arrival Timings -->
+<div class="grid grid-cols-12 gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm items-center">
+<!-- Criteria Label -->
+<div class="col-span-12 lg:col-span-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">schedule</span>
+<span class="font-title-md text-title-md font-bold">Departure &amp; Arrival</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Duration &amp; morning reach time</p>
+</div>
+<!-- Bus 1 Data -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">19:15</span>
+<span class="material-symbols-outlined text-outline text-[16px]">east</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">04:30 AM</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span>Kashmere Gate</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary">9h 15m (Fastest)</span>
+</div>
+<div class="mt-2.5 pt-2 bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">alarm_on</span>
+            Best for sunrise hike / early check-in
+          </div>
+</div>
+<!-- Bus 2 Data (IntrCity) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-secondary-fixed/20">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">20:30</span>
+<span class="material-symbols-outlined text-outline text-[16px]">east</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">06:45 AM</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span>Dhaula Kuan Private Hub</span>
+<span class="font-label-sm text-label-sm font-bold">10h 15m</span>
+</div>
+<div class="mt-2.5 pt-2 bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">hotel</span>
+            Ideal sleep cycle (full 8h rest in motion)
+          </div>
+</div>
+<!-- Bus 3 Data (NueGo) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">21:00</span>
+<span class="material-symbols-outlined text-outline text-[16px]">east</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">07:30 AM</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span>Majnu Ka Tilla</span>
+<span class="font-label-sm text-label-sm font-bold">10h 30m</span>
+</div>
+<div class="mt-2.5 pt-2 bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">ev_station</span>
+            Includes two 25m fast-charging breaks
+          </div>
+</div>
+</div>
+<!-- ROW 2: Boarding Lounge & Check-in Facilities -->
+<div class="grid grid-cols-12 gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm items-center">
+<!-- Criteria Label -->
+<div class="col-span-12 lg:col-span-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">deck</span>
+<span class="font-title-md text-title-md font-bold">Boarding Lounges</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pre-departure waiting amenities</p>
+</div>
+<!-- Bus 1 Data -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+            Shared Zingbus Premium Lounge
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Air-conditioned sitting area, washroom access, water dispenser at ISBT Kashmere Gate Gate 4.</p>
+<div class="flex gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container">Free Wi-Fi</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">Tea/Coffee ₹20</span>
+</div>
+</div>
+<!-- Bus 2 Data (IntrCity - Star Perk) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-secondary-fixed/20 space-y-2">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Exclusive Private "SmartLounge"
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dhaula Kuan Hub: Recliner pods, clean private restrooms, laptop workstation &amp; luggage escrow.</p>
+<div class="flex gap-1.5 text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed">Complimentary Coffee</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed">Boarding Escort</span>
+</div>
+</div>
+<!-- Bus 3 Data (NueGo) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+            Standard Public Curbside
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Majnu Ka Tilla road stop with digital boarding assistance captain. No dedicated indoor lounge.</p>
+<div class="flex gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container">GPS Live ETA</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">Curbside Luggage Tag</span>
+</div>
+</div>
+</div>
+<!-- ROW 3: Seat Comfort & Vibration Telemetry -->
+<div class="grid grid-cols-12 gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm items-center">
+<!-- Criteria Label -->
+<div class="col-span-12 lg:col-span-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">airline_seat_flat</span>
+<span class="font-title-md text-title-md font-bold">Seat &amp; Cabin Stability</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pitch, angle &amp; gyroscope sensor index</p>
+</div>
+<!-- Bus 1 Data -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase">Berth Angle</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">180° Flat Bed (6.2 ft)</span>
+</div>
+<!-- Vibration Bar -->
+<div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant mb-1">
+<span>Himalayan Ghat Stability</span>
+<span class="font-bold text-on-surface">0.18 G</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-tertiary" style="width: 82%;"></div>
+</div>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm block">Memory foam mattress + fresh blanket pack.</span>
+</div>
+<!-- Bus 2 Data (IntrCity - Star Perk) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-secondary-fixed/20 space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Berth Angle</span>
+<span class="font-label-md text-label-md font-bold text-secondary">Private Cabin Pod (6.4 ft)</span>
+</div>
+<!-- Vibration Bar -->
+<div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant mb-1">
+<span>Himalayan Ghat Stability</span>
+<span class="font-bold text-secondary">0.12 G (Smoothest)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-secondary" style="width: 94%;"></div>
+</div>
+</div>
+<span class="text-on-surface font-body-sm text-body-sm block">Scania Electronically Controlled Air Suspension (ECAS).</span>
+</div>
+<!-- Bus 3 Data (NueGo) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase">Berth Angle</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">170° Semi-Flat (6.0 ft)</span>
+</div>
+<!-- Vibration Bar -->
+<div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant mb-1">
+<span>Himalayan Ghat Stability</span>
+<span class="font-bold text-on-surface">0.15 G</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-tertiary" style="width: 87%;"></div>
+</div>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm block">Ultra-low engine vibration from EV powertrain.</span>
+</div>
+</div>
+<!-- ROW 4: Cleanliness Audit & Hygiene -->
+<div class="grid grid-cols-12 gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm items-center">
+<!-- Criteria Label -->
+<div class="col-span-12 lg:col-span-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">sanitizer</span>
+<span class="font-title-md text-title-md font-bold">Cleanliness Audit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Verified pre-trip sanitize checklists</p>
+</div>
+<!-- Bus 1 Data -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">4.8 <span class="text-label-md text-outline font-normal">/ 5.0</span></span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Audited</span>
+</div>
+<ul class="mt-2 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">check</span> Sealed Linen Bags</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">check</span> UV-C Pre-trip Cabin Sanitized</li>
+</ul>
+</div>
+<!-- Bus 2 Data (IntrCity - 4.9 Score) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-secondary-fixed/20">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">4.9 <span class="text-label-md text-on-surface-variant font-normal">/ 5.0</span></span>
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Category Top</span>
+</div>
+<ul class="mt-2 space-y-1 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">check</span> Fresh Pillow + Disposable Bedroll</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">check</span> Cabin Air PM 2.5 HEPA Filtration</li>
+</ul>
+</div>
+<!-- Bus 3 Data (NueGo) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">4.7 <span class="text-label-md text-outline font-normal">/ 5.0</span></span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Audited</span>
+</div>
+<ul class="mt-2 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">check</span> Antimicrobial Seat Covers</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary">check</span> Odor-Free Electric AC System</li>
+</ul>
+</div>
+</div>
+<!-- ROW 5: Punctuality Rates & Fleet Telemetry -->
+<div class="grid grid-cols-12 gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm items-center">
+<!-- Criteria Label -->
+<div class="col-span-12 lg:col-span-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">timer</span>
+<span class="font-title-md text-title-md font-bold">Punctuality Score</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Historical 90-day on-time performance</p>
+</div>
+<!-- Bus 1 Data (Zingbus 98%) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-tertiary-fixed/30 border-l-4 border-tertiary">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">98.2%</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">Lowest Delay Risk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Average delay on Delhi-Manali stretch: <strong class="text-on-surface">&lt; 8 mins</strong>.</p>
+</div>
+<!-- Bus 2 Data (IntrCity 95%) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">95.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Consistent</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Buffer stop added at Chandigarh bypass. Avg delay: <strong class="text-on-surface">&lt; 18 mins</strong>.</p>
+</div>
+<!-- Bus 3 Data (NueGo 92%) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">92.8%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Moderate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dependent on Bilaspur EV charging queue. Avg delay: <strong class="text-on-surface">&lt; 28 mins</strong>.</p>
+</div>
+</div>
+<!-- ROW 6: Cancellation & Refund Policies -->
+<div class="grid grid-cols-12 gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm items-center">
+<!-- Criteria Label -->
+<div class="col-span-12 lg:col-span-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">published_with_changes</span>
+<span class="font-title-md text-title-md font-bold">Cancellation Policy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Flexibility &amp; instant refund window</p>
+</div>
+<!-- Bus 1 Data -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low space-y-1">
+<div class="font-label-md text-label-md text-on-surface font-bold">Free cancellation up to 6 hrs</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">50% refund between 6 hrs and 2 hrs before departure. Instant redBus wallet refund.</div>
+</div>
+<!-- Bus 2 Data (IntrCity) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-secondary-fixed/20 space-y-1">
+<div class="font-label-md text-label-md text-secondary font-bold">"Zero Loss" Flexi-Pass Included</div>
+<div class="font-body-sm text-body-sm text-on-surface">Free reschedule or 100% refund voucher up to 2 hours prior to journey.</div>
+</div>
+<!-- Bus 3 Data (NueGo) -->
+<div class="col-span-12 md:col-span-4 lg:col-span-3 p-4 rounded-lg bg-surface-container-low space-y-1">
+<div class="font-label-md text-label-md text-on-surface font-bold">Free cancellation up to 12 hrs</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">70% refund between 12 hrs and 4 hrs before departure. Standard bank transfer in 48 hrs.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Route Map & Elevation Telemetry Section -->
+<section class="w-full px-6 lg:px-12 py-6">
+<div class="max-w-7xl mx-auto bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">terrain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Route Gradient &amp; Rest Stop Visualizer</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Delhi (216m) to Manali (2,050m) • High vibration terrain begins at Bilaspur Ghats (KM 360)</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Zingbus Stop: Karnal Oasis
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-fixed font-label-sm text-label-sm text-on-secondary-fixed">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> IntrCity Stop: Haveli Murthal
+          </span>
+</div>
+</div>
+<!-- Route SVG Chart & Visualization -->
+<div class="w-full bg-surface-container-low rounded-xl p-4 lg:p-6 overflow-hidden">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant mb-2">
+<span>0 KM (Delhi ISBT)</span>
+<span>140 KM (Karnal)</span>
+<span>260 KM (Chandigarh Bypass)</span>
+<span>390 KM (Mandi Ghats)</span>
+<span>530 KM (Manali Mall)</span>
+</div>
+<!-- SVG Elevation Gradient Chart with Rest Markers -->
+<div class="relative w-full h-32">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 1000 120">
+<defs>
+<lineargradient id="elevationGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4b41e1" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#4b41e1" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Elevation Slope Area -->
+<path d="M 0,110 Q 200,105 350,95 T 600,60 T 800,30 L 1000,10 L 1000,120 L 0,120 Z" fill="url(#elevationGrad)"></path>
+<path d="M 0,110 Q 200,105 350,95 T 600,60 T 800,30 L 1000,10" fill="none" stroke="#4b41e1" stroke-linecap="round" stroke-width="3"></path>
+<!-- Rest Stop Point 1: IntrCity Lounge Haveli -->
+<circle cx="120" cy="107" fill="#4b41e1" r="6"></circle>
+<circle cx="120" cy="107" fill="#4b41e1" fill-opacity="0.2" r="12"></circle>
+<!-- Rest Stop Point 2: Zingbus Karnal Oasis -->
+<circle cx="260" cy="101" fill="#b20017" r="5"></circle>
+<!-- Rest Stop Point 3: NueGo Bilaspur EV Hub -->
+<circle cx="680" cy="48" fill="#006443" r="5"></circle>
+</svg>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-surface-container mt-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Hygienic Halts</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">All 3 operators halt at FSSAI 4-star restaurants</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">medical_services</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Emergency Oxygen</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">IntrCity &amp; Zingbus carry on-board altitude kits</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Driver Dual-Shift</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Swap scheduled at Kiratpur for hill driving safety</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Quick Conversion Action Bar -->
+<aside class="sticky bottom-0 left-0 right-0 z-40 bg-surface-container-lowest shadow-2xl py-3 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Fast Booking Demand</span>
+<p class="font-body-sm text-body-sm text-on-surface">Only 7 sleeper berths remaining across these 3 premier services.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto justify-end">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+          Share Matrix
+        </button>
+<!-- Dynamic direct action button -->
+<a class="px-6 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm flex items-center gap-2" href="#matrix-top">
+<span>Choose Recommended (IntrCity)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Embedded Client Script for AI Chip Interaction -->
+<script>
+    function triggerFilter(type) {
+      const chips = document.querySelectorAll('.quick-chip');
+      chips.forEach(c => c.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed'));
+      
+      const banner = document.querySelector('.font-headline-md');
+      if (!banner) return;
+
+      if (type === 'morning') {
+        banner.innerHTML = `<span class="text-primary font-bold">Zingbus Plus Electric</span> wins hands-down for early morning meetings, arriving at <strong>04:30 AM</strong> at Manali Mall, giving you 3+ hours headstart before office hours.`;
+      } else if (type === 'cleanliness') {
+        banner.innerHTML = `<span class="text-secondary font-bold">IntrCity SmartBus</span> leads cleanliness with <strong>4.9/5 verified audit</strong> score, hospital-grade PM 2.5 HEPA filters, and disposable sanitized linen wraps.`;
+      } else if (type === 'cancellation') {
+        banner.innerHTML = `<span class="text-secondary font-bold">IntrCity</span> is most flexible with zero-deduction voucher refunds up to <strong>2 hours prior</strong>, compared to NueGo's 12-hour window.`;
+      } else if (type === 'luggage') {
+        banner.innerHTML = `<span class="text-tertiary font-bold">All 3 coaches</span> offer 20kg hold capacity with digital QR luggage tags. IntrCity provides dedicated ski/snowboard rack options.`;
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-12"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"><div><div class="flex items-center gap-2 mb-3"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">directions_bus</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold">redBus</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Next-generation intelligent intercity bus discovery, instant seat mapping, and real-time transit telemetry powered by redBus Copilot.</p></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3 uppercase tracking-wider">Discovery</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="ai-bus-discovery" href="#">Smart Route Search</a></li><li><a class="hover:text-primary transition-colors" data-path="popular-routes" href="#">Popular Express Routes</a></li><li><a class="hover:text-primary transition-colors" data-path="sleeper-coaches" href="#">Premium Sleeper Coaches</a></li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3 uppercase tracking-wider">Passenger Hub</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="my-bookings" href="#">Manage Tickets</a></li><li><a class="hover:text-primary transition-colors" data-path="live-bus-tracking" href="#">Live Bus Tracking</a></li><li><a class="hover:text-primary transition-colors" data-path="help-center" href="#">Refunds &amp; Cancellations</a></li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3 uppercase tracking-wider">Operator &amp; AI Safety</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><span class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified_user</span> Verified Operators</span></li><li><span class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">smart_toy</span> Agent Telemetry 2.4</span></li><li class="font-body-sm text-body-sm text-on-surface-variant pt-2">24/7 National Emergency Escalation</li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-surface-container-high gap-4"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 redBus India Pvt Ltd. All rights reserved.</p><div class="flex items-center gap-6 font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="help-center" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="help-center" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="help-center" href="#">Security Standards</a></div></div></div></footer></body></html>

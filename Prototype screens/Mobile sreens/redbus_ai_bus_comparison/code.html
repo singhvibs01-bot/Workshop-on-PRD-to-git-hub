@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed": "#6ffbbe", "primary-container": "#d8232a", "on-primary": "#ffffff", "surface-container-high": "#dee8ff", "secondary-fixed": "#e2dfff", "inverse-primary": "#ffb3ad", "surface-dim": "#cfdaf2", "on-surface": "#111c2d", "tertiary": "#006443", "on-secondary-container": "#fffbff", "surface-container": "#e7eeff", "outline": "#916f6c", "background": "#f9f9ff", "on-error": "#ffffff", "surface": "#f9f9ff", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#410003", "secondary-container": "#645efb", "tertiary-container": "#007f57", "surface-bright": "#f9f9ff", "on-primary-fixed-variant": "#930011", "surface-container-highest": "#d8e3fb", "inverse-on-surface": "#ecf1ff", "tertiary-fixed-dim": "#4edea3", "error-container": "#ffdad6", "secondary-fixed-dim": "#c3c0ff", "surface-variant": "#d8e3fb", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "on-background": "#111c2d", "outline-variant": "#e5bdb9", "on-tertiary-fixed": "#002113", "on-primary-container": "#fff1ef", "primary-fixed": "#ffdad6", "surface-container-low": "#f0f3ff", "on-secondary-fixed-variant": "#3323cc", "primary": "#b20017", "on-tertiary-fixed-variant": "#005236", "surface-tint": "#bf071b", "on-secondary-fixed": "#0f0069", "primary-fixed-dim": "#ffb3ad", "on-surface-variant": "#5c403d", "error": "#ba1a1a", "inverse-surface": "#263143", "on-tertiary-container": "#ccffe2", "secondary": "#4b41e1" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-lg": "3rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "1rem", "gutter-md": "1.5rem", "gutter-lg": "2rem", "margin-md": "2rem" }, fontFamily: { "display-hero": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-hero": ["48px", { "lineHeight": "56px", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-hero-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high/40 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="redBus AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIiHZLVZbTW7hjIyIS5gsJL9PJMef6FAB0d4f5G0w1_MPJ9kGW4e7VzvjGRMDK54WQhwusacaTln_DBWPDliIDM_8FSdQUG0jIeKESykDLxmRTUCN_g_FMwtj9q8xrQi87ub5RdCGjHkF9FUGg25DOBT28s5f0A5D639jew33YeKDEzc5gDbg5Uq1VBwUJQvc4w13Jnvr0a5h4jt1F6b3nnnI7YiMvkdUVvkIQY_G3zZ_4Nrz9yNPx"/><h1 class="font-title-md text-title-md text-on-surface leading-tight ml-space-xs">Search Results</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-28">
+<!-- Route & Comparison Context Sub-bar -->
+<div class="px-gutter pt-space-xs pb-space-sm bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-title-md text-title-md font-bold">Delhi</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+<span class="font-title-md text-title-md font-bold">Jaipur</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span>Tomorrow, 25 Oct</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-primary font-semibold">Comparing 2 of 3 buses</span>
+</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">compare_arrows</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Side-by-Side</span>
+</div>
+</div>
+</div>
+<div class="px-gutter flex flex-col gap-space-md pt-space-md">
+<!-- Section 1: AI Comparison Summary Card -->
+<div class="bg-gradient-to-br from-surface-container-low via-surface-container-lowest to-surface-container-high rounded-xl p-space-md shadow-md relative overflow-hidden">
+<!-- Ambient Sparkle Glow -->
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-sm py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[15px] animate-pulse">auto_awesome</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">redBus AI Verdict</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary-fixed/30 px-space-xs py-0.5 rounded">High Confidence</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-space-xs leading-relaxed">
+<strong class="font-title-md text-primary">Zingbus Plus</strong> is <span class="font-semibold text-tertiary">₹50 cheaper</span> with slightly earlier arrival (04:30 AM), while <strong class="font-title-md text-secondary">IntrCity SmartBus</strong> offers complimentary <span class="font-semibold">private AC lounge</span> access at Dhaula Kuan.
+      </p>
+<!-- Conversational Query Chips -->
+<div class="mt-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs mb-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Ask AI to compare:</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar">
+<!-- Active chip -->
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Which is cheapest?
+          </button>
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md whitespace-nowrap hover:bg-surface-container shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+            Shortest travel time?
+          </button>
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md whitespace-nowrap hover:bg-surface-container shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">weekend</span>
+            Better lounge?
+          </button>
+<button class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md whitespace-nowrap hover:bg-surface-container shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+            Punctuality record?
+          </button>
+</div>
+</div>
+</div>
+<!-- Section 2: Side-by-Side Bus Comparison Cards -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Selected Fleet</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Swipe to compare</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Bus Column A: Zingbus Plus -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex flex-col justify-between shadow-md relative overflow-hidden">
+<!-- AI Badge -->
+<div class="absolute top-0 right-0 bg-tertiary text-on-tertiary px-space-xs py-0.5 rounded-bl font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">award_star</span> 98%
+          </div>
+<div>
+<!-- Header Info -->
+<div class="pr-6">
+<span class="inline-block bg-error-container text-on-error-container font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold mb-1">
+                AI Best Choice
+              </span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Zingbus Plus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Electric AC Sleeper (2+1)</p>
+</div>
+<!-- Image thumbnail of bus interior -->
+<div class="mt-space-xs rounded-lg overflow-hidden h-20 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Modern electric luxury sleeper bus interior with ambient warm cabin LED strip lighting, plush clean individual reclining berths, soft pillows and organized charging ports in red and clean slate tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB62VZn2OTaOfnw9J00i1WlfUvX1ydtn0QSgf5rAqH9Khsxf2z_SkmXd1iPF03UDw2oON2UymZgo2bh8zwE_yaI0kJH4ibqvXY6UjYzY9qg47aKQrrZQNNX4oyY_yPYLRHYs0hQqX_PzrSZNAELeltn4W6_uPhlgFnyrbsKCQrKilsuT4E603W-r_UpRlv-tRTAWj4bvs7m3gel7v_oSdrAJS0bUTCTEyzAc43zatxosluswBS0bHs"/>
+<div class="absolute bottom-1 left-1 bg-surface-dim/80 backdrop-blur-sm px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">(1.4k)</span>
+</div>
+</div>
+<!-- Fare & Savings -->
+<div class="mt-space-xs flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">₹749</span>
+<span class="font-body-sm text-body-sm text-outline line-through">₹850</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Save ₹101</span>
+</div>
+<!-- Schedule timeline -->
+<div class="mt-space-xs bg-surface-container-low p-2 rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">10:15 PM</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate max-w-[70px]">Kashmere Gt</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-body-sm text-[10px] text-on-surface-variant">6h 15m</span>
+<div class="w-10 h-0.5 bg-outline-variant relative my-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary absolute -top-0.5 left-1/2 -translate-x-1/2"></span>
+</div>
+<span class="font-body-sm text-[9px] text-tertiary font-semibold">Direct</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">04:30 AM</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate max-w-[70px]">Sindhi Camp</p>
+</div>
+</div>
+</div>
+<!-- Micro specs -->
+<div class="mt-space-xs flex flex-col gap-1 font-body-sm text-body-sm">
+<div class="flex items-center gap-1 text-on-surface-variant text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-secondary">pin_drop</span>
+<span class="truncate">Metro Gate 1 (1.8 km)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-tertiary">bolt</span>
+<span>Type-C, GPS, Blanket</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-semibold text-[11px]">
+<span class="material-symbols-outlined text-[13px]">airline_seat_recline_extra</span>
+<span>8 seats left</span>
+</div>
+</div>
+</div>
+<!-- Column Action -->
+<div class="mt-space-sm pt-space-xs">
+<button class="w-full h-10 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-bold shadow-sm transition-all active:scale-[0.98] flex items-center justify-center gap-1">
+<span>Select ₹749</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Bus Column B: IntrCity SmartBus -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex flex-col justify-between shadow-md relative overflow-hidden">
+<!-- AI Badge -->
+<div class="absolute top-0 right-0 bg-secondary text-on-secondary px-space-xs py-0.5 rounded-bl font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">auto_awesome</span> 94%
+          </div>
+<div>
+<!-- Header Info -->
+<div class="pr-6">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold mb-1">
+                Most Comfortable
+              </span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-tight">IntrCity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Multi-Axle AC Sleeper</p>
+</div>
+<!-- Image thumbnail of bus interior/lounge -->
+<div class="mt-space-xs rounded-lg overflow-hidden h-20 w-full relative">
+<img class="w-full h-full object-cover" data-alt="High-end private executive bus lounge interior with soft air conditioning, comfortable sofas, passenger waiting screens, and espresso bar with passengers relaxing in Dhaula Kuan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9R9gD251eaG38G52qKdiKm44t60rr1DbpjCou816tRdiNCSdCUuRd1d9nihfE77oYX_E32TxuyTz1HN694B4VBJv6ihGIw87c5mK3bquHLoLqen5YQHBVN6m-5oW4w4KkEAvHj9n8SR0OOlCu5AQiF-Quv0FZed-fMoZwt-9aOM_dkc6ZpCbr-OrxHOzRKs9A6kkHrXPDgFbQp_u7LmlXbPh_0wCZt6IuBzJc239MU_rbMr1ZeiI"/>
+<div class="absolute bottom-1 left-1 bg-surface-dim/80 backdrop-blur-sm px-1.5 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.6</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">(2.1k)</span>
+</div>
+</div>
+<!-- Fare & Savings -->
+<div class="mt-space-xs flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">₹799</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Standard Fare</span>
+</div>
+<!-- Schedule timeline -->
+<div class="mt-space-xs bg-surface-container-low p-2 rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">10:45 PM</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate max-w-[70px]">Dhaula Kuan</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-body-sm text-[10px] text-on-surface-variant">6h 15m</span>
+<div class="w-10 h-0.5 bg-outline-variant relative my-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary absolute -top-0.5 left-1/2 -translate-x-1/2"></span>
+</div>
+<span class="font-body-sm text-[9px] text-tertiary font-semibold">Direct</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">05:00 AM</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate max-w-[70px]">Narayan S. Cir</p>
+</div>
+</div>
+</div>
+<!-- Micro specs -->
+<div class="mt-space-xs flex flex-col gap-1 font-body-sm text-body-sm">
+<div class="flex items-center gap-1 text-on-surface-variant text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-secondary">meeting_room</span>
+<span class="truncate font-semibold text-secondary">Private AC Lounge</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-tertiary">wifi</span>
+<span>Wi-Fi, Sanitized Pods</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-[11px]">
+<span class="material-symbols-outlined text-[13px]">airline_seat_recline_extra</span>
+<span>12 seats left</span>
+</div>
+</div>
+</div>
+<!-- Column Action -->
+<div class="mt-space-sm pt-space-xs">
+<button class="w-full h-10 bg-surface-container-high hover:bg-surface-container-highest text-primary rounded-lg font-label-md text-label-md font-bold shadow-sm transition-all active:scale-[0.98] flex items-center justify-center gap-1">
+<span>Select ₹799</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Detailed Comparison Matrix Table -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Feature Comparison Matrix</h2>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">tune</span> 5 Metrics
+        </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<!-- Table Column Headers -->
+<div class="grid grid-cols-12 bg-surface-container-low px-space-md py-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="col-span-4 uppercase tracking-wider">Metric</div>
+<div class="col-span-4 font-bold text-primary text-center">Zingbus Plus</div>
+<div class="col-span-4 font-bold text-secondary text-center">IntrCity</div>
+</div>
+<!-- Row 1: Price & Offers -->
+<div class="grid grid-cols-12 items-center px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<div class="col-span-4">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Price &amp; Offers</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Base + tax</span>
+</div>
+<div class="col-span-4 text-center">
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold">
+              ₹749 (Lowest)
+            </span>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-md text-label-md text-on-surface font-bold">₹799</span>
+</div>
+</div>
+<!-- Row 2: Departure Time -->
+<div class="grid grid-cols-12 items-center px-space-md py-space-sm bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<div class="col-span-4">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Departure Time</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Delhi Origin</span>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-md text-label-md text-on-surface font-bold">10:15 PM</span>
+<p class="font-body-sm text-[10px] text-on-surface-variant">Early Arrival</p>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-md text-label-md text-on-surface font-bold">10:45 PM</span>
+<p class="font-body-sm text-[10px] text-secondary font-semibold">+30m relaxed</p>
+</div>
+</div>
+<!-- Row 3: Boarding Experience -->
+<div class="grid grid-cols-12 items-center px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<div class="col-span-4">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Boarding Exp.</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Waiting comfort</span>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard Gate</span>
+</div>
+<div class="col-span-4 text-center">
+<span class="inline-flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed-variant px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[12px]">star</span> AC Lounge
+            </span>
+</div>
+</div>
+<!-- Row 4: Seat Space & Cleanliness -->
+<div class="grid grid-cols-12 items-center px-space-md py-space-sm bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<div class="col-span-4">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Cleanliness</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Verified audit</span>
+</div>
+<div class="col-span-4 text-center">
+<div class="inline-flex items-center gap-1 text-tertiary font-bold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">cleaning_services</span>
+<span>4.9 / 5</span>
+</div>
+</div>
+<div class="col-span-4 text-center">
+<div class="inline-flex items-center gap-1 text-on-surface font-semibold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">cleaning_services</span>
+<span>4.8 / 5</span>
+</div>
+</div>
+</div>
+<!-- Row 5: On-Time Arrival % -->
+<div class="grid grid-cols-12 items-center px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<div class="col-span-4">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Punctuality</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Last 30 days</span>
+</div>
+<div class="col-span-4 text-center">
+<div class="flex flex-col items-center">
+<span class="font-label-md text-label-md text-tertiary font-extrabold">98% on-time</span>
+<div class="w-12 h-1 bg-surface-container-high rounded-full overflow-hidden mt-0.5">
+<div class="bg-tertiary h-full w-[98%]"></div>
+</div>
+</div>
+</div>
+<div class="col-span-4 text-center">
+<div class="flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface font-bold">95% on-time</span>
+<div class="w-12 h-1 bg-surface-container-high rounded-full overflow-hidden mt-0.5">
+<div class="bg-secondary h-full w-[95%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 6: Cancellation Policy -->
+<div class="grid grid-cols-12 items-center px-space-md py-space-sm bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<div class="col-span-4">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Cancellation</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Flexibility</span>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Free till 6h</span>
+</div>
+<div class="col-span-4 text-center">
+<span class="font-body-sm text-[11px] text-on-surface-variant">50% till 4h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Trip Match Insight Box -->
+<div class="bg-secondary-container/10 rounded-xl p-space-md flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Planning morning meetings in Jaipur?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zingbus arrives at 04:30 AM giving you ample buffer for freshening up before 9:00 AM.</p>
+</div>
+</div>
+</div>
+<!-- Section 4: Fixed Docked Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md px-gutter py-space-sm shadow-[0_-4px_16px_rgba(0,0,0,0.06)] pb-safe">
+<div class="max-w-md mx-auto flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ready to book?</span>
+<div class="flex items-baseline gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface">Zingbus Plus</span>
+<span class="font-label-md text-label-md text-primary font-extrabold">₹749</span>
+</div>
+</div>
+<button class="h-12 px-space-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-bold rounded-xl shadow-md flex items-center gap-space-xs transition-all active:scale-[0.98]" onclick="handleSelectBus()">
+<span>Select Seats (Screen 6)</span>
+<span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  function handleSelectBus() {
+    // Interactive trigger for seat selection transition
+    const btn = event.currentTarget;
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span><span>Loading Seats...</span>';
+    setTimeout(() => {
+      // Mock navigation state to Screen 6
+      alert("Navigating to Screen 6: Seat Selection for Zingbus Plus (₹749)");
+      btn.innerHTML = '<span>Select Seats (Screen 6)</span><span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span>';
+    }, 600);
+  }
+</script></main></body></html>
