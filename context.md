@@ -44,13 +44,13 @@ People booking an intercity bus who know some of their travel needs but may not 
 
 | Journey stage | Prototype |
 | --- | --- |
-| Home and bus search | [Mobile home](Prototype%20screens/Mobile%20sreens/redbus_ai_home_bus_search/code.html) |
-| Conversational discovery | [Mobile AI assistant](Prototype%20screens/Mobile%20sreens/redbus_ai_conversational_assistant/code.html) |
-| Preference clarification | [Mobile clarification](Prototype%20screens/Mobile%20sreens/redbus_ai_clarification_preferences/code.html) |
-| Recommendations | [Mobile results](Prototype%20screens/Mobile%20sreens/redbus_ai_recommended_bus_results/code.html) |
-| Trade-off evaluation | [Mobile comparison](Prototype%20screens/Mobile%20sreens/redbus_ai_bus_comparison/code.html) |
-| Seat choice and booking | [Mobile seat selection](Prototype%20screens/Mobile%20sreens/redbus_ai_seat_selection_booking/code.html) |
-| Confirmation | [Mobile confirmation](Prototype%20screens/Mobile%20sreens/redbus_ai_booking_confirmation/code.html) |
+| Home and bus search | [Mobile home](Prototype%20screens/Mobile%20screens/redbus_ai_home_bus_search/code.html) |
+| Conversational discovery | [Mobile AI assistant](Prototype%20screens/Mobile%20screens/redbus_ai_conversational_assistant/code.html) |
+| Preference clarification | [Mobile clarification](Prototype%20screens/Mobile%20screens/redbus_ai_clarification_preferences/code.html) |
+| Recommendations | [Mobile results](Prototype%20screens/Mobile%20screens/redbus_ai_recommended_bus_results/code.html) |
+| Trade-off evaluation | [Mobile comparison](Prototype%20screens/Mobile%20screens/redbus_ai_bus_comparison/code.html) |
+| Seat choice and booking | [Mobile seat selection](Prototype%20screens/Mobile%20screens/redbus_ai_seat_selection_booking/code.html) |
+| Confirmation | [Mobile confirmation](Prototype%20screens/Mobile%20screens/redbus_ai_booking_confirmation/code.html) |
 | Desktop discovery | [Desktop home](Prototype%20screens/Website%20screens/redbus_ai_desktop_home_discovery/code.html) |
 | Desktop recommendations | [Desktop AI results](Prototype%20screens/Website%20screens/redbus_ai_desktop_ai_search_results/code.html) |
 | Desktop comparison | [Desktop comparison](Prototype%20screens/Website%20screens/redbus_ai_desktop_bus_comparison/code.html) |

@@ -5,7 +5,7 @@
 	<p>
 		<a href="Prototype%20screens/Website%20screens/redbus_ai_desktop_home_discovery/code.html">Explore desktop</a>
 		&nbsp;·&nbsp;
-		<a href="Prototype%20screens/Mobile%20sreens/redbus_ai_home_bus_search/code.html">Explore mobile</a>
+		<a href="Prototype%20screens/Mobile%20screens/redbus_ai_home_bus_search/code.html">Explore mobile</a>
 		&nbsp;·&nbsp;
 		<a href="context.md">Read the product brief</a>
 	</p>
@@ -36,13 +36,13 @@ The screens below explore this journey across mobile and desktop. They are indiv
 
 | Stage | Prototype |
 | --- | --- |
-| Start a search | [Home and bus search](Prototype%20screens/Mobile%20sreens/redbus_ai_home_bus_search/code.html) |
-| Describe a trip | [Conversational assistant](Prototype%20screens/Mobile%20sreens/redbus_ai_conversational_assistant/code.html) |
-| Resolve missing details | [Preference clarification](Prototype%20screens/Mobile%20sreens/redbus_ai_clarification_preferences/code.html) |
-| See relevant options | [Recommended bus results](Prototype%20screens/Mobile%20sreens/redbus_ai_recommended_bus_results/code.html) |
-| Weigh trade-offs | [Bus comparison](Prototype%20screens/Mobile%20sreens/redbus_ai_bus_comparison/code.html) |
-| Continue toward booking | [Seat selection and booking](Prototype%20screens/Mobile%20sreens/redbus_ai_seat_selection_booking/code.html) |
-| Review the outcome | [Booking confirmation](Prototype%20screens/Mobile%20sreens/redbus_ai_booking_confirmation/code.html) |
+| Start a search | [Home and bus search](Prototype%20screens/Mobile%20screens/redbus_ai_home_bus_search/code.html) |
+| Describe a trip | [Conversational assistant](Prototype%20screens/Mobile%20screens/redbus_ai_conversational_assistant/code.html) |
+| Resolve missing details | [Preference clarification](Prototype%20screens/Mobile%20screens/redbus_ai_clarification_preferences/code.html) |
+| See relevant options | [Recommended bus results](Prototype%20screens/Mobile%20screens/redbus_ai_recommended_bus_results/code.html) |
+| Weigh trade-offs | [Bus comparison](Prototype%20screens/Mobile%20screens/redbus_ai_bus_comparison/code.html) |
+| Continue toward booking | [Seat selection and booking](Prototype%20screens/Mobile%20screens/redbus_ai_seat_selection_booking/code.html) |
+| Review the outcome | [Booking confirmation](Prototype%20screens/Mobile%20screens/redbus_ai_booking_confirmation/code.html) |
 
 ### Desktop
 
